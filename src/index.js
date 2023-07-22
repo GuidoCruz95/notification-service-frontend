@@ -1,10 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import RegisterNewMessage from "./views/RegisterNewMessage";
+import reportWebVitals from "./reportWebVitals";
+import { Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import LogHistoryData from "./views/LogHistoryData";
+import Image from "react-bootstrap/Image";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import backgroundImage from "./images/background.png"; // Import the image
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
