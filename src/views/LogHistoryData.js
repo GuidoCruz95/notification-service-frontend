@@ -11,8 +11,8 @@ function LogHistoryData({ data }) {
         const formattedTime = `${parsedTime.toLocaleDateString()} ${parsedTime.toLocaleTimeString()}`;
         return (
           <ListGroup.Item key={item.id}>
-            {formattedTime} - Notified to {item["user"].name} by{" "}
-            {item["channel"].type}, Message: {item["message"]}
+            {formattedTime} - Notified to {item["user"]} by
+            {item["channel_type"]}, Message: {item["message"].message}
           </ListGroup.Item>
         );
       })}
